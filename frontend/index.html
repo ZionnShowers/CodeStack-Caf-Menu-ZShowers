@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Fonts (already set up for you) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;900&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind (already set up for you) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // This lets you use the classes `font-sans` (Inter Tight) and `font-serif` (Instrument Serif)
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Inter Tight"', 'sans-serif'],
+            serif: ['"Instrument Serif"', 'serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<!-- TODO: give the body a background color, text color and font -->
+
+<body class="">
+
+  <!-- ===== HEADER ===== -->
+  <header class="px-7 py-6">
+    <!-- TODO: address, hours and phone go here (from the API) -->
+    <div class="flex text-[10px] md:text-[16px] justify-between flex-wrap " id="restaurant-info">
+      <p id="address"></p>
+      <p id="dates"></p>
+      <p id="phone"></p>
+
+
+    </div>
+
+    <!-- TODO: the restaurant name — make it HUGE -->
+    <h1 class="font-extrabold md:text-[144px] text-[40px]" id="restaurant-name"></h1>
+
+    <!-- TODO: the tagline — italic serif, accent color -->
+    <p class="font-serif italic md:text-[40px] text-[23px]" id="tagline"></p>
+  </header>
+
+  <!-- ===== CATEGORY NAV ===== -->
+  <!-- TODO: make the nav stick to the top of the screen when you scroll -->
+  <nav class="border-b border-t border-black">
+    <!-- One link per category goes in here (from the API) -->
+    <ul class="flex font-semibold md:text-[12px] text-[6px] p-2 " id="category-nav">
+      <a href="#category1-name" id="category1-btn"
+        class="border border-black rounded-full p-1 px-3 ml-[20px] mr-[10px]">Bt1</a>
+      <a href="#category2-name" id="category2-btn" class="border border-black rounded-full p-1 px-3 mr-[10px]">Bt2</a>
+      <a href="#category3-name" id="category3-btn" class="border border-black rounded-full p-1 px-3 mr-[10px]">Bt3</a>
+      <a href="#category4-name" id="category4-btn" class="border border-black rounded-full p-1 px-3 mr-[10px]">Bt4</a>
+    </ul>
+  </nav>
+
+  <!-- ===== MENU ===== -->
+  <!-- One <section> per category goes in here (from the API) -->
+  <main id="menu">
+    <p id="status">Loading the menu…</p>
+    <div class="p-8">
+      <div class="flex justify-between">
+        <p id="category1-name" class="font-extrabold md:text-[56px] text-[36px]"></p>
+        <p id="category1-num" class="text-[24px] md:mt-7 mt-3 text-[#C2410C] italic font-serif"></p>
+      </div>
+      <section id="category1-area" class="flex flex-wrap border-b py-[10px] mb-[20px]">
+      </section>
+
+      <div class="flex justify-between">
+        <p id="category2-name" class="font-extrabold md:text-[56px] text-[36px]"></p>
+        <p id="category2-num" class="text-[24px] md:mt-7 mt-3 text-[#C2410C] italic font-serif" ></p>
+      </div>
+      <section id="category2-area" class="flex flex-wrap border-b py-[10px] mb-[20px]">
+      </section>
+
+      <div class="flex justify-between">
+        <p id="category3-name" class="font-extrabold md:text-[56px] text-[36px]"></p>
+        <p id="category3-num" class="text-[24px] md:mt-7 mt-3 text-[#C2410C] italic font-serif"></p>
+      </div>
+      <section id="category3-area" class="flex flex-wrap border-b py-[10px] mb-[20px]">
+      </section>
+
+      <div class="flex justify-between">
+        <p id="category4-name" class="font-extrabold md:text-[56px] text-[36px]"></p>
+        <p id="category4-num" class="text-[24px] md:mt-7 mt-3 text-[#C2410C] italic font-serif"></p>
+      </div>
+      <section id="category4-area" class="flex flex-wrap py-[10px] mb-[20px]">
+      </section>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="p-8">
+    <p class="font-extrabold md:text-[32px] text-[28px]" id="footer-name"></p>
+    <p id="footer-info" class="md:text-[16px] text-[10px]"></p>
+  </footer>
+
+  <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
