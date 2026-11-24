@@ -2,8 +2,8 @@
 - 11/24/2026
 - CodeStack Cafe Menu
 - Our goal was to make a web page based on the images we were given and try to make it user friendly for desktop and mobile users while fetching data from the api db.
-- Reviewer:
-- Peer Reviewer: 
+- Reviewer: Chris Estrada
+- Peer Reviewer: everything looks great and fits all screen sizes. js is clean and functional and it looks just like the picture. nicely done!
 
 # CodeStack Café Menu
 
