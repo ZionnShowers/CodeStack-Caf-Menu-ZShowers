@@ -146,3 +146,4 @@ C:\Users\zionn\Desktop\CodeStack Academy Combine\CSA Week 2\Homework\Cafe Menu\a
 C:\Users\zionn\Desktop\CodeStack Academy Combine\CSA Week 2\Homework\Cafe Menu\api\obj\Debug\net10.0\api.pdb
 C:\Users\zionn\Desktop\CodeStack Academy Combine\CSA Week 2\Homework\Cafe Menu\api\obj\Debug\net10.0\api.genruntimeconfig.cache
 C:\Users\zionn\Desktop\CodeStack Academy Combine\CSA Week 2\Homework\Cafe Menu\api\obj\Debug\net10.0\ref\api.dll
+C:\Users\zionn\Desktop\CodeStack Academy Combine\CSA Week 2\Homework\Cafe Menu\api\obj\Debug\net10.0\api.sourcelink.json

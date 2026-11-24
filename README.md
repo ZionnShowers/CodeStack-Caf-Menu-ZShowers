@@ -1,3 +1,10 @@
+- Zionn Showers
+- 11/24/2026
+- CodeStack Cafe Menu
+- Our goal was to make a web page based on the images we were given and try to make it user friendly for desktop and mobile users while fetching data from the api db.
+- Reviewer:
+- Peer Reviewer: 
+
 # CodeStack Café Menu
 
 Build the online menu for the **CodeStack Café**. All of the menu info (names, prices, descriptions, categories) comes from an API. The photos are in the `images/` folder.

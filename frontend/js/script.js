@@ -1,4 +1,4 @@
-import { itemsFetch } from "./dataservices.js";
+import { cafeFetch, itemsFetch, categoriesFetch } from "./dataservices.js";
 const baseURL = "http://localhost:5292/api"
 
 const address = document.getElementById("address");
@@ -34,28 +34,15 @@ const category4Num = document.getElementById("category4-num");
 
 //Grab database items
 const getItems = async (item) => {
-    const res = await fetch(baseURL + "/item", {
-        method: "GET",
-        //Tell the API the body is JSON.
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(item)
-    })
-    const data = await res.json();
+    // const res = await fetch(baseURL + "/item", {
+    //     method: "GET",
+    //     //Tell the API the body is JSON.
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify(item)
+    // })
+    // const data = await res.json();
+    const data = await itemsFetch();
     console.log(data)
-    // boot1picture.src = `${data[0].image_Url}`
-    // boot1name.textContent = `${data[0].name}`
-    // boot1desc.textContent = `${data[0].description}`
-    // boot1tag.textContent = `${data[0].tag}`
-
-    // boot2picture.src = `${data[1].image_Url}`
-    // boot2name.textContent = `${data[1].name}`
-    // boot2desc.textContent = `${data[1].description}`
-    // boot2tag.textContent = `${data[1].tag}`
-
-    // boot3picture.src = `${data[2].image_Url}`
-    // boot3name.textContent = `${data[2].name}`
-    // boot3desc.textContent = `${data[2].description}`
-    // boot3tag.textContent = `${data[2].tag}`
 }
 
 getItems();
@@ -151,13 +138,14 @@ loadItems();
 
 //Grab database CAFE
 const getCafe = async (cafe) => {
-    const res = await fetch(baseURL + "/cafe", {
-        method: "GET",
-        //Tell the API the body is JSON.
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(cafe)
-    })
-    const data = await res.json();
+    // const res = await fetch(baseURL + "/cafe", {
+    //     method: "GET",
+    //     //Tell the API the body is JSON.
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify(cafe)
+    // })
+    // const data = await res.json();
+    const data = await cafeFetch();
     console.log(data)
     restName.textContent = `${data[0].name}`.toUpperCase();
     tagline.textContent = `${data[0].tagline}`
@@ -170,33 +158,17 @@ const getCafe = async (cafe) => {
 
 getCafe();
 
-// const cafeFetch = async () => {
-//     try {
-//         const res = await fetch(baseURL + "/cafe");
-//         if (!res.ok) {
-//             throw new Error(`Request failed: ${res.status}`);
-//         }
-//         const data = await res.json();
-//         // console.log(data);
-//         showItems(data);
-//     } catch (error) {
-//         status.textContent = "Couldn't load cafe. Check the console."
-//         console.log(error)
-//     }
-// }
-
-// cafeFetch();
-
 
 //Grab database CATEGORIES
 const getCategories = async (cafe) => {
-    const res = await fetch(baseURL + "/category", {
-        method: "GET",
-        //Tell the API the body is JSON.
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(cafe)
-    })
-    const data = await res.json();
+    // const res = await fetch(baseURL + "/category", {
+    //     method: "GET",
+    //     //Tell the API the body is JSON.
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify(cafe)
+    // })
+    // const data = await res.json();
+    const data = await categoriesFetch();
     console.log(data)
     category1Btn.textContent = `${data[0].name}`.toUpperCase();
     category2Btn.textContent = `${data[1].name}`.toUpperCase();
